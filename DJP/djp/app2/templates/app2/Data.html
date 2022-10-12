@@ -5,6 +5,29 @@
     <title>Title</title>
 </head>
 <body>
+<div>
+    <center>
+        {% for i in Data %}
+            <hr>
+        <h>SRNO:-{{ i.SrNo }}</h>
+            <hr>
+            <h>SRNO:-{{ i.Name }}</h>
+            <hr>
+        <h>SRNO:-{{ i.Gmail }}</h>
+            <hr>
+        <h>SRNO:-{{ i.Age }}</h>
+            <hr>
+        <h>SRNO:-{{ i.Add }}</h>
 
+
+        {% endfor %}
+
+
+<button><a href="{% url 'data' %}">DATA</a></button>
+<button><a href="{% url 'data2' %}">DATATWO</a></button>
+<button><a href="{% url 'about' %}">ABOUT</a></button>
+
+    </center>
+</div>
 </body>
 </html>

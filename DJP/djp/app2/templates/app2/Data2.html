@@ -5,6 +5,21 @@
     <title>Title</title>
 </head>
 <body>
+<center>
+    <h>Data Two </h>
 
+
+     {% for j in Data2 %}
+     <h> sr no :- {{ j.SrNo }}</h>
+             <h> name  :- {{ j.Name }}</h>
+          <h> Age :- {{ j.Age }}</h>
+             <h> Gmail :- {{ j.Gmail }}</h>
+                     <h> Mark:- {{ j.Mark }}</h>
+
+    {% endfor %}
+<button><a href="{% url 'data' %}">DATA</a></button>
+<button><a href="{% url 'data2' %}">DATATWO</a></button>
+<button><a href="{% url 'about' %}">ABOUT</a></button>
+</center>
 </body>
 </html>
